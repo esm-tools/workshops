@@ -1,6 +1,8 @@
 choose blocks
 =============
 
+Runscript: `workshops/runscripts/fesom_runscript.yaml`
+
 Basic use of preconfigured `choose`
 -----------------------------------
 
