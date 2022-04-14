@@ -13,13 +13,13 @@ In your FESOM runscript, use the `namelist_changes` syntax to change the `Climat
    `ClimateDataPath` is.
 2. Open your runscript and add the `namelist_changes` syntax necessary to change `ClimateDataPath` to an arbitrary
    path.
-3. Run `esm_runscripts` in check mode, and check that the namelist changes made it to the namelist in the work
+3. Run `esm_runscripts` in check mode, and check that the namelist changes made it into the namelist in the work
    directory: `<base_dir>/<exp_id>/run_DDMMYYY-DDMMYYYY/work/namelist.config`
 
 <details>
   <summary>Solution</summary>
   
-  ```
+  ``` yaml
   fesom:
       namelist_changes:
           namelist.config:
@@ -28,18 +28,18 @@ In your FESOM runscript, use the `namelist_changes` syntax to change the `Climat
   ```
 </details>
 
-Used default namelist_changes configurations
---------------------------------------------
+Use default namelist_changes configurations
+-------------------------------------------
 
-1. Open the `fesom-2.1.yaml` configuration file and look for the `namelist_changes` (ignore for now
-   `add_namelist_changes`).
-2. By looking at that default `namelist_changes`, can you come up with an idea on how to change the
+1. Open the `esm_tools/config/components/fesom/fesom-2.1.yaml` configuration file and look for the `namelist_changes`
+   (ignore for now `add_namelist_changes`).
+2. By looking at that default `namelist_changes` in that file, can you come up with an idea on how to change the
    `ClimateDataPath` for the experiment, just by editing your runscript, without using `namelist_changes` there?
    
 <details>
   <summary>Solution</summary>
   
-  ```
+  ``` yaml
   fesom:
       climate_data_dir: "/my/arbitrary/path/"
   ```
