@@ -17,7 +17,7 @@ In this exercise we are going to be changing the mesh we use to run FESOM from t
 <details>
   <summary>Solution</summary>
   
-  ```
+  ``` yaml
   fesom:
       resolution: pi
   ```
@@ -34,7 +34,7 @@ Construct your own `choose`
 <details>
   <summary>Solution</summary>
   
-  ```
+  ``` yaml
   general:
       my_selector_variable: 1
   
