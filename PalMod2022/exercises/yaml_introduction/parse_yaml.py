@@ -6,7 +6,7 @@ fname = "data.yaml"
 loader = yaml.BaseLoader    # basic loader
 # loader = yaml.FullLoader  # more advanced loader
 
-# Opend and deserialize the YAML file
+# Open and deserialize the YAML file
 with open(fname, "rt") as yaml_file: 
     yaml_data = yaml.load(yaml_file, Loader=loader) 
 
