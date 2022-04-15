@@ -1,0 +1,31 @@
+# ===========================
+# This is a sample YAML file
+# ===========================
+
+age: 18   # integer value
+
+1: one    # integer key
+
+PalMod_Date: 2022-04-20  # date value
+
+another_date: '2020-03-09'   # note the quotes
+
+golden_ratio: 1.6180339887  # float value
+
+3.14159265359: pi  # float key
+
+# list: one item per line
+shopping_lists:
+- tofu
+- beer
+- apples
+
+# inline lists
+models: ["echam", "fesom", "pism"]
+
+# dictionary, map
+foo:
+    bar:
+        fizz:
+            buzz: 666
+    
