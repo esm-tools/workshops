@@ -1,12 +1,13 @@
 general:
         account: <your_account>
         setup_name: fesom
-        compute_time: "00:10:00"
+        compute_time: "00:20:00"
         initial_date: '2001-01-01'
-        final_date: '2001-03-31'
+        final_date: '2001-03-01'
         base_dir: <your_basedir>
         nyear: 0
         nmonth: 1
+        nday: 0
         use_venv: False
 
 fesom:
