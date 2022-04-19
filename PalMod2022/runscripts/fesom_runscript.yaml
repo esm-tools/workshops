@@ -10,11 +10,13 @@ general:
         nday: 0
         use_venv: False
 
+computer:
+        add_additional_flags: ["--reservation=esmtools"]
+
 fesom:
         version: 2.1
         model_dir: <your_model_dir>
         lresume: 0
         restart_rate: 1
-        restart_first: 1
         restart_unit: 'm'
         post_processing: 0
