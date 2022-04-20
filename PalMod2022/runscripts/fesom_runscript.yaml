@@ -1,10 +1,10 @@
 general:
-        account: ab0995
+        account: <account>
         setup_name: fesom
         compute_time: "00:20:00"
         initial_date: '2001-01-01'
         final_date: '2001-03-01'
-        base_dir: /work/ab0995/a270152/
+        base_dir: <base_dir>
         nyear: 0
         nmonth: 1
         nday: 0
@@ -16,7 +16,7 @@ computer:
 
 fesom:
         version: 2.1
-        model_dir: "/work/ab0995/a270152/model_codes/fesom-2.1/"
+        model_dir: <your_model_dir>
         lresume: 0
         restart_rate: 1
         restart_unit: 'm'
