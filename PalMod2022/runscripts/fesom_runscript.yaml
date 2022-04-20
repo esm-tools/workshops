@@ -1,10 +1,10 @@
 general:
-        account: <your_account>
+        account: ab0995
         setup_name: fesom
         compute_time: "00:20:00"
         initial_date: '2001-01-01'
         final_date: '2001-03-01'
-        base_dir: <your_basedir>
+        base_dir: /work/ab0995/a270152/
         nyear: 0
         nmonth: 1
         nday: 0
@@ -12,10 +12,11 @@ general:
 
 computer:
         add_additional_flags: ["--reservation=esmtools"]
+        partition: compute2
 
 fesom:
         version: 2.1
-        model_dir: <your_model_dir>
+        model_dir: "/work/ab0995/a270152/model_codes/fesom-2.1/"
         lresume: 0
         restart_rate: 1
         restart_unit: 'm'
