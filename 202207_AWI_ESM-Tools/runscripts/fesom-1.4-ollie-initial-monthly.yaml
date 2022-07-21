@@ -1,0 +1,32 @@
+# ===
+# basic FESOM-1.4 runscript for Ollie
+# ===
+general:
+    setup_name: fesom
+    compute_time: "00:08:00"
+    initial_date: '2000-01-01'
+    final_date: '2000-02-29'
+    base_dir: "/work/ollie/dural/fesom_test"
+    nyear: 0
+    nmonth: 1
+    use_venv: false
+
+
+fesom:
+    version: "1.4"
+    model_dir: "/home/ollie/dural/Palmod_Workshop_2022/model_codes/fesom-1.4/"
+    pool_dir: "/work/ollie/pool/FESOM/"
+    mesh_dir: "/work/ollie/pool/FESOM/meshes_default/core/"
+    resolution: CORE2
+    lresume: 0
+    restart_rate: 1
+    restart_first: 1
+    restart_unit: 'm'
+    post_processing: 0
+    namelist_changes:
+        namelist.config:
+            paths:
+                opbndpath: "remove_from_namelist"
+                tideforcingpath: "remove_from_namelist"
+
+    # further_reading: "fesom_output_control.yaml"

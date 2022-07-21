@@ -1,0 +1,23 @@
+general:
+        account: <account>
+        setup_name: fesom
+        compute_time: "00:20:00"
+        initial_date: '2001-01-01'
+        final_date: '2001-03-01'
+        base_dir: <base_dir>
+        nyear: 0
+        nmonth: 1
+        nday: 0
+        use_venv: False
+
+computer:
+        add_additional_flags: ["--reservation=esmtools"]
+        partition: compute2
+
+fesom:
+        version: 2.1
+        model_dir: <your_model_dir>
+        lresume: 0
+        restart_rate: 1
+        restart_unit: 'm'
+        post_processing: 0
