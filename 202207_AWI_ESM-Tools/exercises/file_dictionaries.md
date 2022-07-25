@@ -32,7 +32,7 @@ AWI-ESM-2.1
 Change the source of the ECHAM `input` file `/work/ollie/mandresm/workshop/input/awiesm2/T63L47_jan_spec.nc`, and run
 `esm_runscripts` in check mode (`-c`).
 
-Tips:
+**Tips**:
 - You can open the `esm_tools/configs/components/echam/echam.datasets.yaml` file and search for `input_sources` for inspiration.
 - Make sure that your changes have an effect by looking into the `*finished_config.yaml` of the experiment.
 
@@ -46,5 +46,24 @@ Tips:
   ```
 </details>
 
-Excercise 2: Add a new input file and rename it
-===============================================
+Exercise 2: Add a new input file and rename it
+==============================================
+Add the file `cats_input.rst` located in `/work/ollie/mandresm/workshop/input/` as an `input` file into any of the models.
+Make it so that when it's copied to the `work` folder the file is renamed to `lunas_input.rst`.
+
+**Tips**:
+- Check that the file is copied and renamed correctly in the `run_<DATE>/work` folder of your experiment.
+
+<details>
+  <summary>Solution</summary>
+  
+  ``` yaml
+  echam/oifs:
+    add_input_files:
+        cats: cats
+    add_input_sources:
+        cats: "/work/ollie/mandresm/workshop/input/cats_input.rst"
+    add_input_in_work:
+        cats: "lunas_input.rst"
+  ```
+</details>
